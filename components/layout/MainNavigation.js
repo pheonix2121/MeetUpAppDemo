@@ -12,7 +12,7 @@ function MainNavigation() {
             <Link href='/'>All Meetups</Link>
           </li>
           <li>
-            <Link href='/new-meetup'>Add New Meetup</Link>
+          <Link href='/newMeetup'>Add New Meetup</Link>
           </li>
         </ul>
       </nav>
