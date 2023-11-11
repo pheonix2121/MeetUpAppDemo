@@ -29,8 +29,22 @@ const DUMMY_MEETUPS = [
   }
 ];
 
+import { Fragment } from 'react';
+import Head from 'next/head';
+
 function HomePage(props) {
-  return <MeetupList meetups={props.meetups} />;
+  return (
+    <Fragment>
+      <Head>
+        <title>Meetups</title>
+        <meta
+          name='description'
+          content='Go for the huge meetup List!'
+        />
+      </Head>
+      <MeetupList meetups={props.meetups} />;
+    </Fragment>
+  );
 }
 
 export async function getStaticProps() {
